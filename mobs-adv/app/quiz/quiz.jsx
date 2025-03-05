@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     alignItems: "center",
-    backgroundColor: "rgba(255, 255, 255, 0.2)",
+    backgroundColor: "#919191",
     padding: 20,
     borderRadius: 15,
     width: "90%",
@@ -172,14 +172,16 @@ const styles = StyleSheet.create({
   quizContainer: {
     alignItems: "center",
     width: "90%",
-    backgroundColor: "rgba(105, 105, 105, 0.2)",
+    backgroundColor: "#919191",
     padding: 20,
     borderRadius: 15,
+
   },
   timer: {
     fontSize: 15,
     color: "red",
     fontWeight: "bold",
+    marginLeft: "auto",
 
   },
   questionBox: {
@@ -208,9 +210,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 4,
     elevation: 3,
+    borderWidth: 2, 
+    borderColor: "transparent",
   },
   selectedOption: {
-    backgroundColor: "#00ffee",
+    backgroundColor: "transparent",
+    borderWidth: 2,
+    borderColor: "black",
+ 
   },
   navButton: {
     backgroundColor: "#4CAF50",
