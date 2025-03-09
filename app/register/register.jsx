@@ -19,7 +19,7 @@ export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  // Function to pick an image
+ 
   const pickImage = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({
       mediaTypes: ImagePicker.MediaTypeOptions.Images,
@@ -33,7 +33,7 @@ export default function Register() {
     }
   };
 
-  // Function to handle registration
+
   const handleRegister = () => {
     if (!name || !email || !password) {
       if (Platform.OS === "web") {
@@ -44,21 +44,21 @@ export default function Register() {
       return;
     }
 
-    // Success alert and reset form
+   
     if (Platform.OS === "web") {
       window.alert("✅ Success: You have successfully registered!");
-      resetForm(); // Reset without navigating away
+      resetForm(); 
     } else {
       Alert.alert("✅ Success", "You have successfully registered!", [
         {
           text: "OK",
-          onPress: resetForm, // Reset without changing page
+          onPress: resetForm, 
         },
       ]);
     }
   };
 
-  // Function to Reset Form
+ 
   const resetForm = () => {
     setName("");
     setEmail("");
